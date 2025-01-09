@@ -1,0 +1,67 @@
+.kontak-ao {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .chat-history {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message.nasabah {
+    text-align: left;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .message.admin {
+    text-align: right;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
