@@ -1,7 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DepositoPage from "./Pages/DepositoPage";
-import KreditPage from "./Pages/KreditPage";
-import BerandaPage from "./Pages/BerandaPage";
 import LoginPage from "./Pages/LoginPage";
 import DasboardPage from "./Pages/DasboardPage";
 import DepositoSimulasiPage from "./Pages/DepositoSimulasiPage";

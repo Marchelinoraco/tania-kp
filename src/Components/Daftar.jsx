@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { auth, db } from "../configFirebase";
@@ -116,7 +116,7 @@ const Daftar = () => {
                     name="password"
                     value={Password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="input-style"
+                    className="py-2 rounded-[3px] px-2 border-gray-300 border w-[366px]"
                     placeholder="Kata Sandi"
                   />
                 </div>
@@ -130,15 +130,21 @@ const Daftar = () => {
                     name="confirm-password"
                     value={ConfirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
-                    className="input-style"
+                    className="py-2 rounded-[3px] px-2 border-gray-300 border w-[366px]"
                     placeholder="Konfirmasi Kata Sandi"
                   />
                 </div>
               </div>
-              <div className="flex w-full">
-                <button type="submit" className="btn-primary">
+              <div className="flex w-full space-x-4">
+                <button
+                  type="submit"
+                  className="bg-yellow-600 py-2 px-4 rounded-md mb-3"
+                >
                   Daftar
                 </button>
+                <Link to="/" className="bg-blue-400 py-2 px-4 rounded-md mb-3">
+                  Login
+                </Link>
               </div>
             </form>
           </div>

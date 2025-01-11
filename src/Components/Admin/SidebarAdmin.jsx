@@ -124,7 +124,7 @@ const SidebarAdmin = ({ tutupSidebar }) => {
                     to="/form-daftar-deposito-nasabah"
                     className={getNavLinkClass}
                   >
-                    Daftar Deposito (User)
+                    Daftar Deposito
                   </NavLink>
                 )}
 
@@ -133,12 +133,12 @@ const SidebarAdmin = ({ tutupSidebar }) => {
                     to="/form-daftar-deposito"
                     className={getNavLinkClass}
                   >
-                    Daftar Deposito (Admin)
+                    Daftar Deposito
                   </NavLink>
                 )}
 
                 <NavLink to="/tabel-deposito" className={getNavLinkClass}>
-                  Tabel Deposito Admin
+                  Tabel Deposito
                 </NavLink>
               </div>
             )}
@@ -178,7 +178,7 @@ const SidebarAdmin = ({ tutupSidebar }) => {
                     to="/admin-daftar-kredit"
                     className={getNavLinkClass}
                   >
-                    Daftar Kredit admin
+                    Daftar Kredit
                   </NavLink>
                 )}
                 {userRole === "user" && (
@@ -186,23 +186,23 @@ const SidebarAdmin = ({ tutupSidebar }) => {
                     to="/nasabah-daftar-kredit"
                     className={getNavLinkClass}
                   >
-                    Daftar Kredit user
+                    Daftar Kredit
                   </NavLink>
                 )}
 
                 {userRole === "admin" && (
                   <NavLink to="/ajukan-rek" className={getNavLinkClass}>
-                    Ajukan Restrukturisasi admin
+                    Ajukan Restrukturisasi
                   </NavLink>
                 )}
                 {userRole === "user" && (
                   <NavLink to="/ajukan-rek-nasabah" className={getNavLinkClass}>
-                    Ajukan Restrukturisasi user
+                    Ajukan Restrukturisasi
                   </NavLink>
                 )}
                 {userRole === "admin" && (
                   <NavLink to="/ajukan-topup" className={getNavLinkClass}>
-                    Ajukan Top-Up admin
+                    Ajukan Top-Up
                   </NavLink>
                 )}
                 {userRole === "user" && (
@@ -210,7 +210,7 @@ const SidebarAdmin = ({ tutupSidebar }) => {
                     to="/ajukan-topup-nasabah"
                     className={getNavLinkClass}
                   >
-                    Ajukan Top-Up User
+                    Ajukan Top-Up
                   </NavLink>
                 )}
                 <NavLink to="/tabel-kredit" className={getNavLinkClass}>
@@ -232,12 +232,12 @@ const SidebarAdmin = ({ tutupSidebar }) => {
           )}
           {userRole === "user" && (
             <NavLink to="/kontak-ao" className={getNavLinkClass}>
-              Kontak AO user
+              Kontak AO
             </NavLink>
           )}
           {userRole === "admin" && (
             <NavLink to="/kontak-ao-admin" className={getNavLinkClass}>
-              Kontak AO admin
+              Kontak AO
             </NavLink>
           )}
 

@@ -135,31 +135,37 @@ const FormDaftarDeposito = () => {
 
   return (
     <div>
-      <h2>Daftar Pengajuan Deposito</h2>
-      <table>
+      <h2 class="text-xl font-bold mb-4">Daftar Pengajuan Deposito</h2>
+      <table class="w-full border-collapse border border-gray-200 shadow-md">
         <thead>
-          <tr>
-            <th>Nama</th>
-            <th>Nomor KTP</th>
-            <th>Jumlah Deposito</th>
-            <th>Jangka Waktu</th>
-            <th>Bunga</th>
-            <th>Status Perkawinan</th>
-            <th>Tanggal Lahir</th>
-            <th>Keterangan</th>
+          <tr class="bg-gray-500 text-white">
+            <th class="border border-gray-300 px-4 py-2">Nama</th>
+            <th class="border border-gray-300 px-4 py-2">Nomor KTP</th>
+            <th class="border border-gray-300 px-4 py-2">Jumlah Deposito</th>
+            <th class="border border-gray-300 px-4 py-2">Jangka Waktu</th>
+            <th class="border border-gray-300 px-4 py-2">Bunga</th>
+            <th class="border border-gray-300 px-4 py-2">Status Perkawinan</th>
+            <th class="border border-gray-300 px-4 py-2">Tanggal Lahir</th>
+            <th class="border border-gray-300 px-4 py-2">Keterangan</th>
           </tr>
         </thead>
         <tbody>
           {deposits.map((deposit, index) => (
-            <tr key={index}>
-              <td>{deposit.nama}</td>
-              <td>{deposit.ktp}</td>
-              <td>{deposit.jumlah}</td>
-              <td>{deposit.jangkaWaktu}</td>
-              <td>{deposit.bunga}%</td>
-              <td>{deposit.status}</td>
-              <td>{deposit.tglLahir}</td>
-              <td>{deposit.keterangan}</td>
+            <tr key={index} class="hover:bg-gray-100 even:bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">{deposit.nama}</td>
+              <td class="border border-gray-300 px-4 py-2">{deposit.ktp}</td>
+              <td class="border border-gray-300 px-4 py-2">{deposit.jumlah}</td>
+              <td class="border border-gray-300 px-4 py-2">
+                {deposit.jangkaWaktu}
+              </td>
+              <td class="border border-gray-300 px-4 py-2">{deposit.bunga}%</td>
+              <td class="border border-gray-300 px-4 py-2">{deposit.status}</td>
+              <td class="border border-gray-300 px-4 py-2">
+                {deposit.tglLahir}
+              </td>
+              <td class="border border-gray-300 px-4 py-2">
+                {deposit.keterangan}
+              </td>
             </tr>
           ))}
         </tbody>

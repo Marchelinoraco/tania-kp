@@ -45,7 +45,7 @@ const Login = () => {
                     name="email"
                     value={Username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="input-style"
+                    className="w-[50px]"
                     placeholder="Nama Pengguna"
                   />
                 </div>
@@ -58,19 +58,28 @@ const Login = () => {
                     name="password"
                     value={Password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="input-style"
+                    className="py-2 rounded-[3px] px-2 border-gray-300 border w-[366px]"
                     placeholder="Kata Sandi"
                   />
                 </div>
               </div>
               <div className="flex w-full">
-                <button type="submit" className="btn-primary">
+                <button
+                  type="submit"
+                  className="bg-blue-400 py-2 px-4 rounded-md mb-3"
+                >
                   Masuk
                 </button>
               </div>
             </form>
-            <p className="text-sm text-gray-500">
-              Belum memiliki akun? <Link to={"/daftar"}>Daftar</Link>
+            <p className="text-md text-gray-500">
+              Belum memiliki akun?{" "}
+              <Link
+                className="text-gray-500 hover:text-blue-500"
+                to={"/daftar"}
+              >
+                Daftar
+              </Link>
             </p>
           </div>
         </div>
